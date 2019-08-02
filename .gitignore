@@ -1,0 +1,11 @@
+builds/*
+t/*
+td/*
+files/*
+db/*
+errors.txt
+
+getchats/db/*
+getchats/files/*
+getchats/errors.txt
+getchats/builds/*

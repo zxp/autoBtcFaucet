@@ -16,6 +16,11 @@ import (
 	"github.com/howeyc/gopass"
 )
 
+const (
+	// CHATID old BTC Faucet，会话 ID：848714900
+	CHATID int64 = 684499845 // BTC Faucet v6
+)
+
 var (
 	version, tagName, branch, commitID, buildTime string
 )
@@ -174,7 +179,7 @@ func main() {
 	go func() {
 		rand.Seed(time.Now().UnixNano())
 		// Should get chatID somehow, check out "getChats" example
-		chatID := int64(848714900)
+		chatID := int64(CHATID)
 		inputMsgTxt := tdlib.NewInputMessageText(tdlib.NewFormattedText("💦 Faucet", nil), true, true)
 		var w int
 		for {

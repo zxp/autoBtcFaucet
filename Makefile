@@ -18,6 +18,9 @@ linux: linux_amd64
 
 linux_amd64:
 	env GOOS=linux GOARCH=amd64 go build -v -ldflags "-s -w ${VERSION}" -o builds/btcFaucet_lin
+	cd getchats && env GOOS=linux GOARCH=amd64 go build -v -ldflags "-s -w ${VERSION}" -o builds/getChats_lin
+	mv getchats/builds/getChats_lin builds
+	cd builds && 7z a btcFaucet_Linux.7z btcFaucet_lin getChats_lin
 
 windows: windows_amd64
 

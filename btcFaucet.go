@@ -18,7 +18,8 @@ import (
 
 const (
 	// CHATID old BTC Faucet，会话 ID：848714900
-	CHATID int64 = 684499845 // BTC Faucet v6
+	// CHATID int64 = 684499845 // BTC Faucet v6
+	CHATID int64 = 942804177 // BTC Faucet v7
 )
 
 var (
